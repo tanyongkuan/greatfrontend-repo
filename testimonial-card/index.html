@@ -19,11 +19,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "gradient-custom":
+                "linear-gradient(147.52deg, #F9FAFB 8.89%, #D2D6DB 100.48%)",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       /* You may write styles inside this <style> tag or within `css/style.css`. */
     </style>
   </head>
-  <body class="bg-gradient-to-r from-[#F9FAFB] to-[#D2D6DB]">
+  <body class="bg-gradient-custom">
     <!-- Add your site or application content here -->
     <main class="flex items-center justify-center text-base">
       <!--Card-->
